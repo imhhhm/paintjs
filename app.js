@@ -35,7 +35,7 @@ function onMouseMove(event){
     }else{
         ctx.lineTo(x,y);
         ctx.stroke();
-    }
+    }  
 }
 function handleColorClick(event){
     const color =event.target.style.backgroundColor;
