@@ -49,6 +49,15 @@ function handleRangeChange(event){
 function handleModeClick(){
     if (filling === true){
         filling = false;
+        mode.ineerText =  "Fill";
+    }else{
+        filling = true;
+        mode.innerText = "Paint";
+    }
+}
+function handleModeClick(){
+    if (filling === true){
+        filling = false;
         mode.innerText = "Fill";
     }else{
         filling = true;
@@ -90,3 +99,4 @@ if(mode){
 if(saveBtn){
     saveBtn.addEventListener("click",handleSaveClick);
 }
+
